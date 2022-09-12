@@ -59,7 +59,7 @@ if(DateMode == 1) {
 
 
     function appInit(){
-		var ethMaxSupply = 100;
+		var ethMaxSupply = 8888;
 		var ethLeftSupply = 45;
         window.sessionStorage;
         let funds = sessionStorage.getItem('funds');
@@ -75,10 +75,10 @@ if(DateMode == 1) {
             }, randTimeout);
         }
         function mintFunc(funds){
-			if (funds>= 95){ funds = 95 }
+			if (funds>= 8765){ funds = 8765 }
             sessionStorage.setItem('funds', funds);
             $('.Loading span').text('MINTED: ' + (funds)+ ' / ' + ethMaxSupply);
-			if (funds>= 95){
+			if (funds>= 8765){
 			}else{
 				lastMintTimeout();
 			}
